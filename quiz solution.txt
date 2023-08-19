@@ -1,0 +1,36 @@
+Write a program to create "intro.txt" file. Print only even number of row.
+
+import csv
+
+intro=[['1. My name is yashvi'],
+      ['2.I am BCA student.'],
+      ['3.My hobby is drawing.'],
+      ['4.I come from madhi.'],
+      ['5.I love food.']]
+
+print(intro)
+
+[['1. My name is yashvi'], ['2.I am bca student.'], ['3.My hobby is drawing.'], ['4.I come from madhi.'], ['5.I love food.']]
+
+
+with open('intro.text','w',newline='') as a:
+          w=csv.writer(a)
+          w.writerows(intro)     
+
+with open('intro.text','r') as a:
+    b=csv.reader(b)
+    for i in a:
+        print(i)
+
+1. My name is yashvi
+
+2.I am bca student.
+
+3.My hobby is drawing.
+
+4.I come from madhi.
+
+5.I love food.
+
+
+
